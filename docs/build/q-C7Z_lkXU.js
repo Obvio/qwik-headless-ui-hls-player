@@ -1,0 +1,1 @@
+import{u as n,_ as c,a as s}from"./q-BRFIrRA0.js";import{b as e}from"./q-Cbyc9mUz.js";const l=o=>{const a=n(e);return c("button",{onClick$:a.stop},{"data-name":"StopButton",class:s(t=>t.class,[o])},s(t=>t.label||"Stop",[o]),2,"XI_6")};export{l as s_gB7DD7r0Tsw};

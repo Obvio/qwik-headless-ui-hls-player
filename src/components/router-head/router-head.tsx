@@ -17,7 +17,7 @@ export const RouterHead = component$(() => {
       <link
         rel="icon"
         type="image/svg+xml"
-        href="https://obvio.github.io/qwik-headless-hls-player/favicon.svg"
+        href="https://obvio.github.io/qwik-headless-ui-hls-player/favicon.svg"
       />
 
       {head.meta.map((m) => (

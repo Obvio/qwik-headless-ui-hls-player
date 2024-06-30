@@ -1,0 +1,1 @@
+import{u as n,_ as u,a as t}from"./q-BRFIrRA0.js";import{b as l,a as r}from"./q-Cbyc9mUz.js";const p=s=>{const e=n(l),o=n(r);return u("input",{onInput$:e.updateRange},{"data-name":"PlaybackScrubber",type:"range",value:t(a=>a.percentPlayed.value,[o]),class:t(a=>a.class,[s])},null,2,"XI_2")};export{p as s_dGpuWvQefjA};

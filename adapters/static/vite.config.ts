@@ -13,7 +13,7 @@ export default extendConfig(baseConfig, () => {
     plugins: [
       staticAdapter({
         origin: "https://obvio.github.io",
-        base: "qwik-headless-hls-player",
+        base: "qwik-headless-ui-hls-player",
       }),
     ],
   };

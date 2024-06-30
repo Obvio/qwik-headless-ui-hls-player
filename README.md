@@ -2,7 +2,7 @@
 
 ![qwik headless ui hls player](./media/qwik-headless-ui-hls-player-screenshot.png)
 
-[Demo](https://obvio.github.io/qwik-headless-hls-player/)
+[Demo](https://obvio.github.io/qwik-headless-ui-hls-player/)
 
 ## Project Structure
 

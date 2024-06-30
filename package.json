@@ -1,5 +1,5 @@
 {
-  "name": "qwik-headless-hls-player",
+  "name": "qwik-headless-ui-hls-player",
   "engines": {
     "node": "^18.17.0 || ^20.3.0 || >=21.0.0"
   },

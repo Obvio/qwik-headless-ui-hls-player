@@ -1,0 +1,1 @@
+import{u as a,_ as e,a as c}from"./q-BRFIrRA0.js";import{b as i}from"./q-Cbyc9mUz.js";const l=s=>{const n=s.seconds||15,t=a(i);return e("button",{"data-seconds":n,onClick$:t.rewind},{class:c(o=>o.class,[s]),"data-name":"RewindButton"},s.label||`Rewind ${n} seconds`,0,"XI_5")};export{l as s_iTjSCOerCf4};

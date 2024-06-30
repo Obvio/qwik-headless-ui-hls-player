@@ -22,7 +22,7 @@ export default component$(() => {
         <meta charSet="utf-8" />
         <link
           rel="manifest"
-          href="https://obvio.github.io/qwik-headless-hls-player/manifest.json"
+          href="https://obvio.github.io/qwik-headless-ui-hls-player/manifest.json"
         />
         <RouterHead />
       </head>
