@@ -1,0 +1,483 @@
+<!doctype html>
+<html
+  lang="en-us"
+  q:render="static-ssr"
+  q:route="/"
+  q:container="paused"
+  q:version="1.5.7"
+  q:base="build/"
+  q:locale=""
+  q:manifest-hash="4yz1za"
+>
+  <!--qv q:id=0 q:key=B5UJ:Vj_0--><!--qv q:id=1 q:key=TxCF:yN_3--><!--qv q:s q:sref=1 q:key=--><head
+    q:head
+  >
+    <meta charset="utf-8" q:head />
+    <link
+      rel="manifest"
+      href="https://obvio.github.io/qwik-headless-hls-player/manifest.json"
+      q:head
+    />
+    <!--qv q:id=2 q:key=F4sG:yN_0-->
+    <!--qv q:key=Zb_0-->
+    <title q:head>Qwik Headless UI HLS Player</title>
+    <link rel="canonical" href="https://obvio.github.io/" q:id="3" q:head />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      q:head
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://obvio.github.io/qwik-headless-hls-player/favicon.svg"
+      q:head
+    />
+    <!--/qv-->
+    <!--/qv-->
+    <style data-src="/build/q-BMM9CPkf.css">
+      :root {
+        --startColor: hsl(0, 100%, 75%);
+        --stopColor: hsl(0, 100%, 75%);
+      }
+      body {
+        height: 100vh;
+      }
+      main {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      [data-name="PlayerRoot"] {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: clamp(330px, 100%, 600px);
+      }
+      .scrubber-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+      }
+      [data-name="PlaybackScrubber"] {
+        flex: 1;
+      }
+      .action-buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+      }
+      .action-buttons button {
+        padding: 6px 4px;
+        cursor: pointer;
+      }
+    </style>
+    <style q:style="lcydw1-0" hidden>
+      :root {
+        view-transition-name: none;
+      }
+    </style>
+  </head>
+  <body lang="en">
+    <!--qv q:id=4 q:key=e0ss:yN_1--><!--qv q:key=zl_1--><!--qv q:id=5 q:key=1c1U:zl_0--><!--qv q:s q:sref=5 q:key=--><!--qv q:id=6 q:key=DHJl:zl_0-->
+    <main q:key="fj_8">
+      <h1>4</h1>
+      <!--qv q:id=7 q:key=cmXk:fj_7-->
+      <div
+        data-name="PlayerRoot"
+        on-document:qinit="q-CoWUpmLy.js#_hW[0]"
+        q:key="0K_1"
+        q:id="8"
+      >
+        <!--qv q:s q:sref=7 q:key=-->
+        <div class="scrubber-container">
+          <div>
+            Current time
+            <!--qv q:id=9 q:key=H09n:fj_0--><span
+              data-name="CurrentTime"
+              q:key="Fm_0"
+              q:id="a"
+              ><!--t=b--><!--t=c-->00:00<!----><!----></span
+            ><!--/qv-->
+          </div>
+          <!--qv q:id=d q:key=HVuR:fj_1--><input
+            data-name="PlaybackScrubber"
+            type="range"
+            value="0"
+            on:input="q-CoWUpmLy.js#s_afoXHZLUAP0[0 1 2]"
+            q:key="Fm_2"
+            q:id="e"
+          /><!--/qv-->
+          <div>
+            Time left
+            <!--qv q:id=f q:key=EqNb:fj_2--><span
+              data-name="TimeLeft"
+              q:key="Fm_1"
+              q:id="g"
+              ><!--t=h--><!--t=i-->00:00<!----><!----></span
+            ><!--/qv-->
+          </div>
+        </div>
+        <div class="action-buttons">
+          <!--qv q:id=j q:key=E690:fj_3--><button
+            data-seconds="15"
+            data-name="RewindButton"
+            on:click="q-CoWUpmLy.js#s_Rt0RfGITd2Y[0]"
+            q:key="Fm_5"
+            q:id="k"
+          >
+            Rewind 15 seconds</button
+          ><!--/qv--><!--qv q:id=l q:key=wJXV:fj_4--><button
+            data-name="StopButton"
+            on:click="q-CoWUpmLy.js#s_X2Sb0V4s5Xc[0 1]"
+            q:key="Fm_6"
+            q:id="m"
+          >
+            <!--t=n-->Stop<!----></button
+          ><!--/qv--><!--qv q:id=o q:key=z10S:fj_5--><button
+            data-name="PlayButton"
+            on:click="q-CoWUpmLy.js#s_m0DJvEI8mEc[0 1]"
+            q:key="Fm_3"
+            q:id="p"
+          >
+            Play</button
+          ><!--/qv--><!--qv q:id=q q:key=LIdQ:fj_6--><button
+            data-seconds="15"
+            data-name="FastForwardButton"
+            on:click="q-CoWUpmLy.js#s_NjdgqL0n7I8[0]"
+            q:key="Fm_4"
+            q:id="r"
+          >
+            FF 15 seconds</button
+          ><!--/qv-->
+        </div>
+        <!--/qv--><audio q:id="s"></audio>
+      </div>
+      <!--/qv-->
+    </main>
+    <!--/qv--><!--/qv--><!--/qv-->
+    <script>
+      (async (n, e) => {
+        var t;
+        if (!window._qcs && history.scrollRestoration === "manual") {
+          window._qcs = !0;
+          const s = (t = history.state) == null ? void 0 : t._qCityScroll;
+          s && window.scrollTo(s.x, s.y);
+          const r = document.currentScript,
+            o = r.closest("[q\\:container]"),
+            c = new URL(o.getAttribute("q:base"), document.baseURI);
+          (await import(new URL(n, c).href))[e](r);
+        }
+      })("q-D3WBTSLL.js", "s_DyVc0YBIqQU");
+    </script>
+    <!--/qv--><!--/qv--><!--qv q:key=yN_2-->
+    <script q:key="1Z_0">
+      ((i, r, a, o) => {
+        (a = (e) => {
+          const t = document.querySelector("[q\\:base]");
+          t &&
+            r.active &&
+            r.active.postMessage({
+              type: "qprefetch",
+              base: t.getAttribute("q:base"),
+              ...e,
+            });
+        }),
+          document.addEventListener("qprefetch", (e) => {
+            const t = e.detail;
+            r ? a(t) : i.push(t);
+          }),
+          "serviceWorker" in navigator
+            ? navigator.serviceWorker
+                .register("/service-worker.js")
+                .then((e) => {
+                  (o = () => {
+                    (r = e), i.forEach(a), a({ bundles: i });
+                  }),
+                    e.installing
+                      ? e.installing.addEventListener("statechange", (t) => {
+                          t.target.state == "activated" && o();
+                        })
+                      : e.active && o();
+                })
+                .catch((e) => console.error(e))
+            : console.log("Service worker not supported in this browser.");
+      })([]);
+    </script>
+    <!--/qv-->
+  </body>
+  <!--/qv--><!--/qv--><!--/qv-->
+  <script q:type="prefetch-bundles">
+    ((n, e, t) => {
+      e.push(["prefetch", n.getAttribute("q:base"), ...t]);
+    })(
+      document.currentScript.closest("[q\\:container]"),
+      window.qwikPrefetchSW || (window.qwikPrefetchSW = []),
+      [
+        "q-CoWUpmLy.js",
+        "q-BRFIrRA0.js",
+        "q-Cbyc9mUz.js",
+        "q-uemlvruI.js",
+        "q-D2knf2e9.js",
+      ],
+    );
+    document.dispatchEvent(
+      new CustomEvent("qprefetch", { detail: { links: [location.pathname] } }),
+    );
+  </script>
+  <script type="qwik/json">
+    {
+      "refs": {
+        "8": "h",
+        "e": "4 0 2",
+        "k": "4",
+        "m": "4 1",
+        "p": "4 1",
+        "r": "4"
+      },
+      "ctx": {
+        "7": {
+          "h": " f!",
+          "w": "h",
+          "c": "audio-signals-context=b audio-actions-context=t"
+        },
+        "o": { "h": "l k!", "s": "t b" }
+      },
+      "objs": [
+        "\u00126",
+        "\u00129",
+        "\u00126",
+        "\u00128",
+        "\u0012#s",
+        "\u0012u",
+        "00:00",
+        "#c",
+        0,
+        false,
+        "#i",
+        {
+          "isPlaying": "1",
+          "percentPlayed": "3",
+          "currentTime": "0",
+          "timeLeft": "2"
+        },
+        "\u0011b @0",
+        "\u0002q-CoWUpmLy.js#s_pObfHD0PmkE[4 0 3 2]",
+        "https://flipfit-cdn.akamaized.net/flip_hls/6656423247ffe600199e8363-15125d/video_h1.m3u8",
+        { "url": "e" },
+        "\u0002q-CoWUpmLy.js#s_4dFWsyWJxTo[4 5 d f!]",
+        "\u00031 9 g #7",
+        "Play",
+        "Pause",
+        { "playLabel": "i", "pauseLabel": "j" },
+        "\u0002q-D2knf2e9.js#s_z10SkWbaSPI",
+        "\u0002q-CoWUpmLy.js#s_m0DJvEI8mEc[4 1]",
+        "\u0002q-CoWUpmLy.js#s_tS6qI0254HY[4 1]",
+        "\u0002q-CoWUpmLy.js#s_1qasHAJ55I4[4 1]",
+        "\u0002q-CoWUpmLy.js#s_X2Sb0V4s5Xc[4 1]",
+        "\u0002q-CoWUpmLy.js#s_NjdgqL0n7I8[4]",
+        "\u0002q-CoWUpmLy.js#s_Rt0RfGITd2Y[4]",
+        "\u0002q-CoWUpmLy.js#s_afoXHZLUAP0[4 0 2]",
+        {
+          "togglePlayback": "m",
+          "play": "n",
+          "pause": "o",
+          "stop": "p",
+          "fastForward": "q",
+          "rewind": "r",
+          "updateRange": "s"
+        },
+        "\u0001"
+      ],
+      "subs": [["3 #c 0 #c"], ["0 #o"], ["3 #i 2 #i"], ["1 #e c #d value"]]
+    }
+  </script>
+  <script q:func="qwik/json">
+    document.currentScript.closest("[q\\:container]").qFuncs = [
+      (p0) => p0.percentPlayed.value,
+    ];
+  </script>
+  <script id="qwikloader">
+    (() => {
+      var e = Object.defineProperty,
+        t = Object.getOwnPropertySymbols,
+        n = Object.prototype.hasOwnProperty,
+        r = Object.prototype.propertyIsEnumerable,
+        o = (t, n, r) =>
+          n in t
+            ? e(t, n, {
+                enumerable: !0,
+                configurable: !0,
+                writable: !0,
+                value: r,
+              })
+            : (t[n] = r),
+        s = (e, s) => {
+          for (var a in s || (s = {})) n.call(s, a) && o(e, a, s[a]);
+          if (t) for (var a of t(s)) r.call(s, a) && o(e, a, s[a]);
+          return e;
+        };
+      ((e, t) => {
+        const n = "__q_context__",
+          r = window,
+          o = new Set(),
+          a = "replace",
+          i = "forEach",
+          c = "target",
+          l = "getAttribute",
+          f = "isConnected",
+          p = "qvisible",
+          b = "_qwikjson_",
+          u = (t) => e.querySelectorAll(t),
+          y = (e) => e && "function" == typeof e.then,
+          d = (e, t, n = t.type) => {
+            u("[on" + e + "\\:" + n + "]")[i]((r) => q(r, e, t, n));
+          },
+          m = (t) => {
+            if (void 0 === t[b]) {
+              let n = (t === e.documentElement ? e.body : t).lastElementChild;
+              for (; n; ) {
+                if ("SCRIPT" === n.tagName && "qwik/json" === n[l]("type")) {
+                  t[b] = JSON.parse(
+                    n.textContent[a](/\\x3C(\/?script)/gi, "<$1"),
+                  );
+                  break;
+                }
+                n = n.previousElementSibling;
+              }
+            }
+          },
+          h = (e, t) => new CustomEvent(e, { detail: t }),
+          q = async (t, r, o, i = o.type) => {
+            const c = "on" + r + ":" + i;
+            t.hasAttribute("preventdefault:" + i) && o.preventDefault();
+            const p = t._qc_,
+              b = p && p.li.filter((e) => e[0] === c);
+            if (b && b.length > 0) {
+              for (const e of b) {
+                const n = e[1].getFn([t, o], () => t[f])(o, t),
+                  r = o.cancelBubble;
+                y(n) && (await n), r && o.stopPropagation();
+              }
+              return;
+            }
+            const u = t[l](c);
+            if (u) {
+              const r = t.closest("[q\\:container]"),
+                i = r[l]("q:base"),
+                c = r[l]("q:version") || "unknown",
+                p = r[l]("q:manifest-hash") || "dev",
+                b = new URL(i, e.baseURI);
+              for (const l of u.split("\n")) {
+                const u = new URL(l, b),
+                  d = u.href,
+                  h = u.hash[a](/^#?([^?[|]*).*$/, "$1") || "default",
+                  q = performance.now();
+                let v, g, E;
+                const _ = l.startsWith("#"),
+                  k = {
+                    qBase: i,
+                    qManifest: p,
+                    qVersion: c,
+                    href: d,
+                    symbol: h,
+                    element: t,
+                    reqTime: q,
+                  };
+                if (_)
+                  (v = (r.qFuncs || [])[Number.parseInt(h)]),
+                    v ||
+                      ((g = "sync"),
+                      (E = Error("sync handler error for symbol: " + h)));
+                else {
+                  const e = u.href.split("#")[0];
+                  try {
+                    const t = import(e);
+                    m(r), (v = (await t)[h]);
+                  } catch (e) {
+                    (g = "async"), (E = e);
+                  }
+                }
+                if (!v) {
+                  w("qerror", s({ importError: g, error: E }, k));
+                  break;
+                }
+                const C = e[n];
+                if (t[f])
+                  try {
+                    (e[n] = [t, o, u]), _ || w("qsymbol", s({}, k));
+                    const r = v(o, t);
+                    y(r) && (await r);
+                  } catch (e) {
+                    w("qerror", s({ error: e }, k));
+                  } finally {
+                    e[n] = C;
+                  }
+              }
+            }
+          },
+          w = (t, n) => {
+            e.dispatchEvent(h(t, n));
+          },
+          v = (e) => e[a](/([A-Z])/g, (e) => "-" + e.toLowerCase()),
+          g = async (e) => {
+            let t = v(e.type),
+              n = e[c];
+            for (d("-document", e, t); n && n[l]; ) {
+              const r = q(n, "", e, t);
+              let o = e.cancelBubble;
+              y(r) && (await r),
+                (o =
+                  o ||
+                  e.cancelBubble ||
+                  n.hasAttribute("stoppropagation:" + e.type)),
+                (n = e.bubbles && !0 !== o ? n.parentElement : null);
+            }
+          },
+          E = (e) => {
+            d("-window", e, v(e.type));
+          },
+          _ = () => {
+            var n;
+            const s = e.readyState;
+            if (
+              !t &&
+              ("interactive" == s || "complete" == s) &&
+              ((t = 1),
+              w("qinit"),
+              (null != (n = r.requestIdleCallback) ? n : r.setTimeout).bind(r)(
+                () => w("qidle"),
+              ),
+              o.has(p))
+            ) {
+              const e = u("[on\\:" + p + "]"),
+                t = new IntersectionObserver((e) => {
+                  for (const n of e)
+                    n.isIntersecting &&
+                      (t.unobserve(n[c]), q(n[c], "", h(p, n)));
+                });
+              e[i]((e) => t.observe(e));
+            }
+          },
+          k = (e, t, n, r = !1) =>
+            e.addEventListener(t, n, { capture: r, passive: !1 }),
+          C = (t) => {
+            for (const n of t)
+              o.has(n) || (k(e, n, g, !0), k(r, n, E, !0), o.add(n));
+          };
+        if (!(n in e)) {
+          e[n] = 0;
+          const t = r.qwikevents;
+          Array.isArray(t) && C(t),
+            (r.qwikevents = { push: (...e) => C(e) }),
+            k(e, "readystatechange", _),
+            _();
+        }
+      })(document);
+    })();
+  </script>
+  <script>
+    window.qwikevents.push("qinit", "input", "click");
+  </script>
+</html>
